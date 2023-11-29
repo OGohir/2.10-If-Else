@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Coin
+{
+    
+    public static void coin()
+    {
+    
+    Scanner input = new Scanner(System.in);
+
+    System.out.println("Flip the coin");
+    String answer = input.nextLine();
+    
+    if (answer.toLowerCase().equals("heads"))
+    {
+        System.out.println("I win!");
+        
+    } else if (answer.toLowerCase().equals("tails")) 
+    {
+        System.out.println("You win!");
+        
+    } else {
+        System.out.println("Invalid...");
+    }
+    System.out.println("thank you for playing");
+}
+}
