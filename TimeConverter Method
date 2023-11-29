@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class TimeConverter
+{
+    public static void run() {
+        Scanner input = new Scanner(System.in);
+        
+        System.out.println("Enter a time in 12 hour format to be converted to 24 hour format.");
+        
+        System.out.print("Hour: ");
+        int hour = Integer.parseInt(input.nextLine());
+        
+        System.out.print("Minute: ");
+        int minute = Integer.parseInt(input.nextLine());
+        
+        System.out.print("AM/PM: ");
+        String morningAfternoon = input.nextLine().toLowerCase();
+        
+        if (morningAfternoon.equals("am")) {
+            System.out.print(hour);
+            
+        } else if (morningAfternoon.equals("pm")) {
+            System.out.print(hour + 12);
+            
+        } else {
+            System.out.println("Error");
+            return;
+        }
+        
+        System.out.println(":" + minute);
+    }
+}
