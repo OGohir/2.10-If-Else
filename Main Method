@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) throws Exception {
+        
+        Scanner input = new Scanner(System.in);
+ 
+        int students = 0;
+        
+        int numPackages = input.nextInt();
+        int numdDelivered = input.nextInt();
+
+        int total_numPackages = 50 * numPackages ;
+        int total_numdDelivered = 10 * numdDelivered;
+
+        int total = total_numPackages- total_numdDelivered;
+
+        if (total_numPackages > total_numdDelivered)
+        {
+            total = total + 500;
+        }
+
+        System.out.println(total);
+    }
+}
