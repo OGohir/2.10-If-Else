@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class WinLoseDraw {
+    public static void run()
+    {
+        Scanner input = new Scanner(System.in);
+        
+        System.out.println("What is 1+1?");
+        
+        System.out.println("Team A: ");
+        int answer_1 = Integer.parseInt(input.nextLine());
+        
+        System.out.println("Team B: ");
+        int answer_2 = Integer.parseInt(input.nextLine());
+        
+        
+        if (answer_1 != 2 && answer_2 != 2 || answer_1 == 2 && answer_2 == 2) 
+        {
+            System.out.print("DRAW");
+            
+        } else if (answer_1 == 2 && answer_2 != 2) 
+        {
+            System.out.println("Team A Wins");
+            
+        } else if (answer_2 == 2 && answer_1 != 2)
+        {
+            System.out.println("Team B Wins");
+        }
+    }
+}
