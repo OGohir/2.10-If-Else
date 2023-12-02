@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Dinner 
+{
+    public static void run()
+    {
+        Scanner input = new Scanner(System.in);
+        
+        System.out.println("Do you want a vegan or meat meal?");
+        String answer = input.nextLine();
+        
+        if (answer.toLowerCase().equals("vegan")) 
+        {
+            System.out.println("fried or baked?");
+            String answer_2 = input.nextLine();
+            System.out.println(answer + " meal that is " + answer_2 + " coming right up!");
+            
+        } else if (answer.toLowerCase().equals("meat")) 
+        {
+            System.out.println("fried or baked?");
+            String answer_2 = input.nextLine();
+            System.out.println(answer + " meal that is " + answer_2 + " coming right up!");
+        }
+    }
+}
