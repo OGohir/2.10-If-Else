@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class Hurricane 
+{
+    public static void main()
+    {
+        Scanner input = new Scanner(System.in);
+        System.out.println("What is the wind speed?");
+        
+        int speed = Integer.parseInt(input.nextLine());
+        
+        if (speed >= 252) {
+            System.out.println("Category: 5");
+            
+        } else if (speed >= 209 && speed <= 251) {
+            System.out.println("Category: 4");  
+            
+        } else if (speed >= 178 && speed <= 208) {
+            System.out.println("Category: 3");
+            
+        } else if (speed >= 154 && speed <= 177) {
+            System.out.println("Category: 2");
+            
+        } else if (speed >= 119 && speed <= 153) {
+            System.out.println("Category: 1");
+            
+        } else {
+            System.out.println("There is no Hurricane!");
+        }
+    }   
+}
+
